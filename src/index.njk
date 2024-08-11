@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+  <title>Pildoras para la salvacion</title>
+</head>
+<body>
+  <main>
+    {% for post in collections.post %}
+      <div class="post-wraper">
+        <div class="info">
+          <div class="date">{{ post.date | readableDate }}</div>
+          {# <div class="read-time">{{ post.content | emojiReadTime }}</div> #}
+        </div>
+        <div class="tags">
+          {% for tag in post.data.tags %}
+            #{{tag}}
+          {% endfor %}
+        </div>
+        <a href="{{ post.url }}"><h3 class="title">{{ post.data.title }}</h3></a>
+        <p class="description"></p>
+      </div>
+    {% endfor %}
+  </main>
+</body>
+</html>

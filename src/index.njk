@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
-  <title>Pildoras para la salvacion</title>
-</head>
-<body>
-  <main>
-    {% for post in collections.post %}
-      <div class="post-wraper">
-        <div class="info">
-          <div class="date">{{ post.date | readableDate }}</div>
-          {# <div class="read-time">{{ post.content | emojiReadTime }}</div> #}
+---
+title: Index
+layout: base.njk
+---
+<main>
+  <div class="index-container">
+    <div class="info">
+      <h1>Pildoras de Salvacion</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt esse deleniti nisi qui quam, tempore cupiditate voluptates numquam hic temporibus ipsum itaque, sed molestias nam repellendus, sapiente quis architecto, vel.</p>
+    </div>
+    <div class="posts">
+      <h2 class="post-title">Publicaciones recientes</h2>
+      {% for post in collections.post %}
+        <div class="post-wraper">
+          <a href="{{ post.url }}"><h2 class="title">{{ post.data.title }}</h2></a>
+          <p class="description">{{ post.data.description }}</p>
+          <div class="info">
+            <span class="date">{{ post.date | readableDate }}</span>
+            <span class="read-time">{{ post.content | emojiReadTime }}</span>
+          </div>
+          <div class="tags">
+            {% for tag in post.data.tags %}
+              #{{tag}}
+            {% endfor %}
+          </div>
         </div>
-        <div class="tags">
-          {% for tag in post.data.tags %}
-            #{{tag}}
-          {% endfor %}
-        </div>
-        <a href="{{ post.url }}"><h3 class="title">{{ post.data.title }}</h3></a>
-        <p class="description"></p>
-      </div>
-    {% endfor %}
-  </main>
-</body>
-</html>
+      {% endfor %}
+    </div>
+  </div>
+</main>

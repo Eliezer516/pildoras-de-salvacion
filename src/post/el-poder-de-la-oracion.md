@@ -1,13 +1,13 @@
 ---
-layout: layout.njk
 title: "El poder de la oración"
+description: "¿Alguna vez te has sentido abrumado por los problemas de la vida? ¿Has buscado respuestas y soluciones que parecen estar fuera de tu alcance? La buena noticia es que tenemos un acceso directo al Creador del universo..."
 tags:
   - oración
   - fe
   - milagros
   - promesa
   - devocional
-date: 2023-10-20  
+date: 2024-08-11  
 ---
 
 ## Conectados con el Cielo: El Poder Transformador de la Oración

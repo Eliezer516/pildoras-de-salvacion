@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+
+<main class="post-content">
+  <h1>{{ title }}</h1>
+  <div class="info">
+    <span class="date">{{date | readableDate}}</span>
+    ||
+    <span class="read-time">{{ content | emojiReadTime }}</span>
+  </div>
+  <div class="tags"></div>
+  {{ content | safe }}
+</main>

@@ -1,6 +1,13 @@
 ---
-title: Index
+title: "Inicio"
+description: "Pildoras de Salvacion"
 layout: base.njk
+eleventyComputed:
+  metadata:
+    title: "{{ title }}"
+    img: "https://v1.screenshot.11ty.dev/http%3A%2F%2Fpildorasdesalvacion.onrender.com%2F/opengraph/"
+    desc: "{{ description }}"
+    name: "Yonaiker Barreto"
 ---
 <main>
   <div class="index-container">
@@ -10,7 +17,7 @@ layout: base.njk
     </div>
     <div class="posts">
       <h2 class="post-title">Publicaciones recientes</h2>
-      {% for post in collections.post %}
+      {% for post in collections.post | reverse %}
         <div class="post-wraper">
           <a href="{{ post.url }}"><h2 class="title">{{ post.data.title }}</h2></a>
           <p class="description">{{ post.data.description }}</p>

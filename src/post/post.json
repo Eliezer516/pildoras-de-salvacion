@@ -1,4 +1,13 @@
 {
   "layout": "post.njk",
-  "tags": ["post"]
+  "tags": ["post"],
+  "basePath": "https://pildorasdesalacion.onrender.com",
+  "eleventyComputed": {
+    "metadata": {
+      "title": "{{ title }}",
+      "desc": "{{ description }}",
+      "name": "Yonaiker Barreto",
+      "img": "https://v1.screenshot.11ty.dev/{{ basePath | formatUrl }}{{ page.url | formatUrl }}/opengraph/"
+    }
+  }
 }

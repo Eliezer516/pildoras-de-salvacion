@@ -17,6 +17,9 @@ importers:
       date-fns:
         specifier: ^2.30.0
         version: 2.30.0
+      eleventy-plugin-metagen:
+        specifier: ^1.8.3
+        version: 1.8.3
       pretty-error:
         specifier: ^4.0.0
         version: 4.0.0
@@ -301,6 +304,9 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
+  eleventy-plugin-metagen@1.8.3:
+    resolution: {integrity: sha512-PP0pQrY/2Jeo5BgBW3xJyBkNhMW0/xOOMBaJkZTJMCT1uOaEFnN0vYPZ3FgD3rvkmhAAVSBwBh172x/E/Y6uQw==}
+
   encodeurl@1.0.2:
     resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
     engines: {node: '>= 0.8'}
@@ -376,6 +382,9 @@ packages:
   get-intrinsic@1.2.4:
     resolution: {integrity: sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ==}
     engines: {node: '>= 0.4'}
+
+  get-tag@0.1.10:
+    resolution: {integrity: sha512-WizKzwUyC0hopc1JcXj6oP/Iq402XWbxaDJdz2ON/uW4ae66XTIAAULryeCLnozRXGsqc7/EQJKnhHcs26S/aw==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -558,6 +567,9 @@ packages:
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
+
+  meta-generator@0.1.5:
+    resolution: {integrity: sha512-stImEDLa5k2TfIMfpFomJKM9LuYzwIIsxS/ejBop0CifPqc4nHoLdTQkABnjrzzkZgLhmXdN144R7OT4dnbKqw==}
 
   micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
@@ -1202,6 +1214,15 @@ snapshots:
     dependencies:
       jake: 10.9.2
 
+  eleventy-plugin-metagen@1.8.3:
+    dependencies:
+      '@11ty/eleventy': 2.0.1
+      meta-generator: 0.1.5
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
+
   encodeurl@1.0.2: {}
 
   entities@2.2.0: {}
@@ -1276,6 +1297,8 @@ snapshots:
       has-proto: 1.0.3
       has-symbols: 1.0.3
       hasown: 2.0.2
+
+  get-tag@0.1.10: {}
 
   glob-parent@5.1.2:
     dependencies:
@@ -1459,6 +1482,10 @@ snapshots:
   mdurl@1.0.1: {}
 
   merge2@1.4.1: {}
+
+  meta-generator@0.1.5:
+    dependencies:
+      get-tag: 0.1.10
 
   micromatch@4.0.7:
     dependencies:

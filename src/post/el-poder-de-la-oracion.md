@@ -1,6 +1,7 @@
 ---
 title: "El poder de la oración"
 description: "¿Alguna vez te has sentido abrumado por los problemas de la vida? ¿Has buscado respuestas y soluciones que parecen estar fuera de tu alcance? La buena noticia es que tenemos un acceso directo al Creador del universo..."
+postImg: "https://images.pexels.com/photos/2730217/pexels-photo-2730217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 tags:
   - oración
   - fe
@@ -42,5 +43,3 @@ La oración no solo cambia nuestras circunstancias, sino que también transforma
 La oración es un regalo invaluable que Dios nos ha dado. A través de la oración, podemos experimentar una paz que sobrepasa todo entendimiento, una esperanza que se aferra a lo eterno y un amor que transforma nuestras vidas.
 
 ¿Estás listo para profundizar tu vida de oración? Dedica tiempo cada día a hablar con Dios. Comparte este mensaje con tus amigos y familiares para que ellos también puedan experimentar el poder transformador de la oración.
-
-**[Imagen sugerida: Una persona orando en un lugar tranquilo]**

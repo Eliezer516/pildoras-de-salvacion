@@ -15,6 +15,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "date-fns": "^2.30.0",
+    "eleventy-plugin-metagen": "^1.8.3",
     "pretty-error": "^4.0.0"
   }
 }

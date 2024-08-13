@@ -83,3 +83,20 @@ header nav a {
   margin: 10px 0;
   border: none;
 }
+
+/* POST CONTENT */
+
+.post-content .info .date,
+.post-content .info .read-time {
+  font-size: 15px;
+}
+
+.post-content .info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.post-content img {
+  margin: 20px 0;
+}
